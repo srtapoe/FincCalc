@@ -1,7 +1,6 @@
 package org.com.studies;
 
 public class Cliente {
-
     private String name;
     private String id;
     private TypesServices service;
@@ -34,5 +33,11 @@ public class Cliente {
 
     public void setService(TypesServices service) {
         this.service = service;
+    }
+
+    public String  showInformations(Cliente cliente){
+        return "Customer's name: " + cliente.getName() + "\n" +
+                "ID: " + cliente.getId() + "\n" +
+                "Type of service hired: " + cliente.getService();
     }
 }
